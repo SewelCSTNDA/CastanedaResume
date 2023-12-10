@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Resume with Javascript</title>
+    <link rel="stylesheet" href="styling.css">
+    <script src="scripting.js"></script>
+</head>
+<body>
+<div id="cover-background" class="cover">
+    <h1>Welcome to Sewel's Online Resume</h1>
+    <p>Please press the button to continue to my online resume!</p>
+    <button id="revealButton">click me!!</button>
+</div>
+<div id="head">
+    <div class="container">
+        <nav>
+            <img src="pictures/LETSGOCLEARBG.png" class="smallpp">
+        </nav>
+        <div class="head_text">
+            <p>CITCS Student in the University of the Cordilleras</p>
+            <h1>Hi! My name is <span>Sewel A. Castañeda</span></h1>
+        </div>
+    </div>
+</div>
+<!--about-->
+<div id="pinfo">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="pictures/MEAGAIN.png" class="momitsme">
+            </div>
+            <div class="about-col-2">
+                <h1 class="title">About Me</h1>
+                <p>I am a 20 year old college student, currently studying at the University of the Cordilleras.
+                    My hobbies include making music, playing volleyball and I especially enjoy playing video games.
+                    I am a fast learner and can easily adapt to any work environment.</p>
+                
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skl')">Skills</p>
+                    <p class="tab-links" onclick="opentab('exp')">Experience</p>
+                    <p class="tab-links" onclick="opentab('educ')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skl">
+                    <ul>
+                        <li><span>Musician</span><br>As a proficient musician, I demonstrate adept proficiency in
+                            both guitar and ukulele performance. My instrumental skills encompass a high level of
+                            competence, showcasing a nuanced understanding of musical intricacies and technical
+                            finesse on both instruments.</li>
+                        <li><span>Songwriter</span><br>In the realm of songwriting, I take pride in craftin
+                            heartfelt lyrics and melodies that seek to connect with listeners on a deep emotional
+                            level. My approach to songwriting revolves around the genuine expression of emotions
+                            and storytelling. I enjoy collaborating with fellow musicians to create compositions
+                            that resonate authentically, always striving to contribute to a shared musical
+                            narrative.</li>
+                        <li><span>Performing artist</span><br>As a performing artist, I strive to bring a humble
+                            yet dynamic presence to the stage. My performances are characterized by a genuine
+                            connection with the audience, and I aim to create memorable experiences through my
+                            versatile and engaging approach. Whether in intimate settings or on larger stages,
+                            I am committed to delivering performances that resonate authentically and leave a
+                            lasting impact.</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="educ">
+                    <ul>
+                        <li><span>2010 - 2016</span><br>Graduated Primary Education at Doña Aurora Elementary School</li>
+                        <li><span>2016 - 2021</span><br>Graduated Junior High School at Bacuio City National High School</li>
+                        <li><span>2021 - 2023</span><br>Graduated Senior High School at Baguio City National High School</li>
+                        <li><span>2023</span><br>Studying Information Technology at the University of the Cordilleras</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="exp">
+                    <ul>
+                        <li><span>Unfortunately</span><br>I currently do not have any formal working experience.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
